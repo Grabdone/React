@@ -1,42 +1,50 @@
 .App {
-  text-align: center;
+  margin: 0 2em;
 }
 
 
 table {
-  width: 40%;
+  width: 100%;
+  text-align: center;
   border-collapse: collapse;
   border: 1px solid rgba(82, 81, 81, 0.096);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+  margin: 0px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1)
 }
-
+.Type{
+  padding-left: 15em;
+}
+td,th{
+  padding: .5em 20px;
+  width: 5px;
+}
 tr{
   border-top: 1px solid rgba(82, 81, 81, 0.096);
-  height: 50px;
 }
 
 .button {
-  width: 10%;
+  width: 10em;
+  height: 4em;
   background-color: white; 
   border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   color: black;
-  padding: 20px 32px;
   text-align: center;
   display: inline-block;
-  font-size: 20px;
-  margin: 15px 15px;
+  margin-right: 0.7em;
+  margin-bottom: 2em;
 }
-
-button:focus{
+.button:focus{
+  background:rgba(219, 215, 106);
+  outline: 0ch;
+}
+.active{
   background:rgba(219, 215, 106);
   outline: 0ch;
 }
 .Headings{
-  font-size: 50px;
+  margin: .5em 0;
+  font-size: 2em;
   font-weight: bold;
-  color: rgb(184, 181, 181);
+  color: #d6d3d3
 }
