@@ -19,6 +19,18 @@ export default class PersonList extends React.Component{
         for(let i=0;i<btns.length;i++){
             btns[i].classList.remove('active');
         }
+        for(let i=0;i<btns.length;i++){
+            btns[i].classList.remove('active');
+        }
+        if(event.target.firstChild.nodeValue==='Today'){
+            btns[0].classList.add('active');
+        }
+        if(event.target.firstChild.nodeValue==='This week'){
+            btns[1].classList.add('active');
+        }
+        if(event.target.firstChild.nodeValue==='This month'){
+            btns[2].classList.add('active');
+        }
         axios.get('https://7cg8uz8p69.execute-api.us-east-1.amazonaws.com/test/people/?period=' + period)
             .then(response =>{
                 this.setState({persons : response.data.people}); 

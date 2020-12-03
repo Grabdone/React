@@ -35,7 +35,6 @@ tr{
   margin-bottom: 2em;
 }
 .button:focus{
-  background:rgba(219, 215, 106);
   outline: 0ch;
 }
 .active{
